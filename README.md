@@ -106,7 +106,7 @@ StandardInput=null
 [Install]
 WantedBy=multi-user.target
 ```
-2. Reload Systemd and enable the service:
+3. Reload Systemd and enable the service:
 ```
 sudo systemctl daemon-reload
 sudo systemctl enable minecraft.service
