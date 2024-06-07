@@ -7,6 +7,10 @@ In this tutorial, we will walk through the process of automatically deploying a 
 - Terraform
 - Ansible
 
+## Diagram
+<img width="1019" alt="image" src="https://github.com/CS-312-nilsstreedain/project-part-2/assets/25465133/0d25e5b0-6dc3-43fd-a8e3-da5be65c798e">
+
+
 ## Steps
 1. Clone the repository and navigate to the project directory.
 ```
