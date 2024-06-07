@@ -16,8 +16,10 @@ cd terraform
 terraform init
 terraform apply -auto-approve -var "aws_access_key=$AWS_ACCESS_KEY_ID" -var "aws_secret_key=$AWS_SECRET_ACCESS_KEY" -var "aws_session_token=$AWS_SESSION_TOKEN"
 
-# Get the public IP of the instance
+# Get the public IP of the instance and wait to init
 instance_ip=$(terraform output -raw instance_public_ip)
+echo "Initializing..."
+sleep 10
 
 # Update the Ansible inventory with the instance IP
 echo "[minecraft]" > ../ansible/inventory
